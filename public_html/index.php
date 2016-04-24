@@ -3,16 +3,19 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<base href="<?php echo dirname($_SERVER["PHP_SELF"]) . "/"; ?>">
+		<!-- <base href="<?php //echo dirname($_SERVER["PHP_SELF"]) . "/"; ?>"> -->
 		<link type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
 		<link type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
 		<link type="text/css" href="css/misquote-of-the-day.css" rel="stylesheet" />
-		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/<?php echo $ANGULAR_VERSION; ?>/angular.min.js"></script>
-		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/<?php echo $ANGULAR_VERSION; ?>/angular-messages.min.js"></script>
-		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/<?php echo $ANGULAR_VERSION; ?>/angular-route.min.js"></script>
-		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.2.1/ui-bootstrap-tpls.min.js"></script>
-		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-pusher/0.0.14/angular-pusher.min.js"></script>
 
+		<script src="node_modules/es6-shim/es6-shim.min.js"></script>
+		<script src="node_modules/systemjs/dist/system-polyfills.js"></script>
+		<script src="node_modules/angular2/es6/dev/src/testing/shims_for_IE.js"></script>
+
+		<script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+		<script src="node_modules/systemjs/dist/system.src.js"></script>
+		<script src="node_modules/rxjs/bundles/Rx.js"></script>
+		<script src="node_modules/angular2/bundles/angular2.dev.js"></script>
 		<title>Misquote of the Day</title>
 	</head>
 	<body>
