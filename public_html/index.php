@@ -1,11 +1,5 @@
-<?php
-/**
-* Angular version
-**/
-$ANGULAR_VERSION = "1.5.0";
-?>
 <!DOCTYPE html>
-<html ng-app="MisquoteOfTheDay">
+<html>
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -18,15 +12,7 @@ $ANGULAR_VERSION = "1.5.0";
 		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/<?php echo $ANGULAR_VERSION; ?>/angular-route.min.js"></script>
 		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.2.1/ui-bootstrap-tpls.min.js"></script>
 		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-pusher/0.0.14/angular-pusher.min.js"></script>
-		<script type="text/javascript" src="angular/misquote-of-the-day.js"></script>
-		<script type="text/javascript" src="angular/pusher-config.js"></script>
-		<script type="text/javascript" src="angular/directives/add-misquote.js"></script>
-		<script type="text/javascript" src="angular/directives/edit-misquote.js"></script>
-		<script type="text/javascript" src="angular/directives/search-misquote.js"></script>
-		<script type="text/javascript" src="angular/directives/footer.js"></script>
-		<script type="text/javascript" src="angular/services/misquote.js"></script>
-		<script type="text/javascript" src="angular/controllers/home.js"></script>
-		<script type="text/javascript" src="angular/controllers/misquote.js"></script>
+
 		<title>Misquote of the Day</title>
 	</head>
 	<body>
@@ -50,7 +36,7 @@ $ANGULAR_VERSION = "1.5.0";
 				</div>
 			</div>
 			<hr />
-			<div class="row" ng-view></div>
+			<div></div>
 		</main>
 	</body>
 </html>
